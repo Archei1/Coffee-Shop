@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Код страницы 404</title>
+    <style>
+        html { height: 100%; }
+        body {
+            margin: 0;
+            background: url('img/404.png');
+            background-size: cover;
+        }
+        .over {
+            background: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            left: 0; right: 0; top: 0; bottom: 0;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+            color: #fff;
+        }
+        .number {
+            font-size: 10em;
+            position: relative;
+            z-index: 2;
+            margin-bottom: 20px;
+        }
+        .notfound {
+            font-size: 2em;
+            position: relative;
+            z-index: 2;
+        }
+        .notfound a {
+            color: #fff;
+            font-size: 0.8em;
+            text-decoration: none;
+        }
+        .notfound a:hover {
+            color: yellow;
+        }
+
+
+        @media (max-width: 600px) {
+            .number {
+                font-size: 6em;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="over"></div>
+<div class="container">
+    <div class="number">404 😞</div>
+    <div class="notfound">Страница не найдена<br>
+        <a href="index.html">Перейти на главную страницу..</a>
+    </div>
+</div>
+</body>
+</html>
